@@ -1,0 +1,89 @@
+body {
+    background-color: green;
+}
+
+
+h2 {
+    color: orangered;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    text-shadow: 2px 2px #333333; 
+}
+
+#commentheader {
+    color: white;
+}
+
+.commenticon {
+    float: left;
+    margin-right: 5px;
+}
+
+.deletecommenticon {
+    float: right;
+    margin-left: 5px;
+}
+
+.mast {
+    padding: 60px;
+}
+
+.articlebutton {
+    background:lightsalmon;
+}
+
+.articlecontainer {
+    background:lightsalmon;
+    color: black;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 15px;
+    margin-right: 50px;
+    padding: 10px;
+}
+
+.card-title {
+    background: orangered;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.icon {
+    height: 30px;
+}
+
+.card-text {
+    color: orange;
+    background: white;
+    padding: 15px;
+}
+
+.card-footer {
+    background-color: orangered;
+    padding: 15px;
+    text-align: right;
+}
+
+.leavecomment {
+    align-self: right;
+}
+#smashimage {
+    width: 250px;
+    border-radius: 8px;
+}
+
+a {
+    color: orange
+}
+
+a:hover {
+    color: orangered;
+}
+
+.deletecommenticon:hover{
+    cursor: pointer;
+}

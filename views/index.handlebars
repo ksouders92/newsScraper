@@ -1,0 +1,78 @@
+
+<div id="mainheader">
+    <div class="row">
+        <div class="mast col-sm-6">
+            <img id="onionimage" src="../public/assets/images/the-onion-logo.jpg" alt="The Onions Logo"/> 
+            
+        </div>
+        <div class="mast col-sm-6">
+            <h2>Articles from The Onion -- Save & Comment</h2>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="mainarticlecontainer" class="col-sm-12">
+            {{#each Articles}}
+            <div class="card articlecontainer" data_id={{id}}>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{!-- <img class="icon" src="/assets/images/arrow-55.png" /> --}}
+                        <b> {{title}}</b>
+                    </h5>
+                    <div class="card-text">
+                        {{summary}}
+                    </div>
+                    <div class="card-footer">
+                        <a href={{link}}>
+                            <button type="button" class="btn btn-danger viewURL articlebutton" data_id={{id}} type="btn">
+                                {{!-- <img src="/assets/images/view.png"> --}}
+                            </button>
+                        </a>
+                        <button type="button" class='btn btn-danger leavecomment articlebutton' data-toggle="modal" data-target="#modal1" data_id={{id}}>
+                            {{!-- <img src="/assets/images/newcomment.png"> --}}
+                        </button>
+                    </div>
+                </div>
+                <div id="commentcontainer" class="container">
+                    <h4 id="commentheader">Comments:</h4>
+                    {{#each note}}
+                    <div class="comments">
+                        {{!-- <img class="commenticon" src="/assets/images/comments.png"><p><b>{{title}} :</b> {{body}}</p> <img class="deletecommenticon" data_id={{id}} src="/assets/images/delete.png" /><br><hr> --}}
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<div id="modal1" class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New comment</h5>
+                <button id="closemodal" type="button" class="close closemodal" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="commenttitle" class="col-form-label">title:</label>
+                        <input type="text" class="form-control" id="commenttitle">
+                    </div>
+                    <div class="form-group">
+                        <label for="commentbody" class="col-form-label">Content:</label>
+                        <textarea class="form-control" id="commentbody"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="closemodal" type="button" class="btn btn-secondary closemodal" data-dismiss="modal">Close</button>
+                <button id="postcomment" type="button" data_id='null' class="btn btn-primary">Save comment</button>
+            </div>
+        </div>
+    </div>
+</div>
