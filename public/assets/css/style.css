@@ -1,89 +1,74 @@
+html {
+    position: relatiive;
+    min-height: 100%;
+}
+
 body {
-    background-color: green;
+    margin-bottom: 80px;
+    background-image: url(" ");
 }
 
-
-h2 {
-    color: orangered;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: left;
-    text-shadow: 2px 2px #333333; 
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #f5f5f5;
 }
 
-#commentheader {
+.navbar {
+    margin-bottom: 0;
+}
+
+.jumbrotron {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    box-shadow: 10px 5px 20px 2px lightslategray
+}
+
+.jumbotron .overlay {
+    background: linear-gradient(#333, black);
+    position: absolute;
+    opacity: 0.8;
+    z-index: auto;
+    background-image: url("newspaper image");
+    background-size: cover
+}
+
+.jumbotron .caption {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.jumbotron .caption h1,
+.jumbotron .caption p{ 
+color: white;
+}
+
+.jumbotron h1 {
+    font-weight: 800;
+    font-size: 80px;
+}
+
+.jumbotron p {
+    font-size: 30px;
+}
+
+.panel {
+    border-radius: 0;
+    box-shadow: 3px 3px 20px lightslategray;
+}
+
+.panel.panel-default .panel-heading {
+    background-color: #2196F3;
+}
+
+.panel.panel-default .panel-heading h3 {
     color: white;
 }
 
-.commenticon {
-    float: left;
-    margin-right: 5px;
-}
 
-.deletecommenticon {
-    float: right;
-    margin-left: 5px;
-}
-
-.mast {
-    padding: 60px;
-}
-
-.articlebutton {
-    background:lightsalmon;
-}
-
-.articlecontainer {
-    background:lightsalmon;
-    color: black;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin-top: 15px;
-    margin-right: 50px;
-    padding: 10px;
-}
-
-.card-title {
-    background: orangered;
-    color: white;
-    padding: 10px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.icon {
-    height: 30px;
-}
-
-.card-text {
-    color: orange;
-    background: white;
-    padding: 15px;
-}
-
-.card-footer {
-    background-color: orangered;
-    padding: 15px;
-    text-align: right;
-}
-
-.leavecomment {
-    align-self: right;
-}
-#smashimage {
-    width: 250px;
-    border-radius: 8px;
-}
-
-a {
-    color: orange
-}
-
-a:hover {
-    color: orangered;
-}
-
-.deletecommenticon:hover{
-    cursor: pointer;
-}
